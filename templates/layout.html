@@ -1,0 +1,25 @@
+<html>
+
+    <head>
+
+  {% if title %}
+
+        <title>{{ title }} - Flask Blog</title>
+
+  {% else %}
+
+  <title>Selamat Datang - Flask Blog</title>
+
+  {% endif %}
+
+    </head>
+
+    <body>
+
+        <h1>Hello {{ orang.nama }}, Umur Anda {{ orang.umur }}!</h1>
+
+  {% block content %}{% endblock %}
+
+    </body>
+
+</html>
